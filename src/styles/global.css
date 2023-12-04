@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply text-neutral-content text-sm xs:text-base xl:text-lg;
+  }
+
+  h2 {
+    @apply text-xl xs:text-3xl font-medium;
+  }
+
+  .container {
+    @apply px-[calc(12px+30*(100vw-320px)/320)] sm:px-[calc(30px+15*(100vw-)/640)];
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .link-1 {
+    @apply link link-hover text-neutral-content hover:text-secondary hover:transition duration-500;
+  }
+
+  .color-title {
+    @apply mb-5 text-transparent bg-clip-text bg-gradient-to-br from-primary to-red-400;
+  }
+
+}

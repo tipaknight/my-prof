@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import heroImg from "../assets/img/avatar.webp";
+---
+
+<div
+  class="min-h-fit my-10 flex-center flex-col lg:flex-row-reverse lg:gap-x-14 gap-y-8"
+>
+  <Image
+    src={heroImg}
+    alt="foto"
+    width={400}
+    class="mask mask-parallelogram-3 opacity-80"
+  />
+
+  <div class="max-w-md">
+    <h1 class="color-title text-4xl xs:text-[50px] font-bold leading-tight">
+      HTML верстка<br /> email писем
+    </h1>
+    <p class="text-lg xs:text-xl">
+      Адаптивные письма в HTML и AMP форматах, чистый код без использования
+      конструкторов.
+    </p>
+  </div>
+</div>

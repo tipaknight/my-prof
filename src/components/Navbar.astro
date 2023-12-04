@@ -1,0 +1,65 @@
+---
+import ToggleDarkLight from "./ToggleDarkLight.astro";
+// interface Props {
+//   sizeText: string;
+
+// }
+const { navData, sizeText } = Astro.props;
+---
+
+<div class="sticky top-0 z-20 w-full navbar bg-base-300">
+  <div class="container mx-auto">
+    <div class="flex-none lg:hidden">
+      <label
+        for="my-drawer-3"
+        aria-label="open sidebar"
+        class="btn btn-square btn-ghost"
+      >
+        <svg
+          class="fill-neutral-content"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="-5 -7 24 24"
+          ><path
+            d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2zm7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2zM1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"
+          ></path></svg
+        >
+      </label>
+    </div>
+    <div class="flex-1 px-2 mx-2">
+      <span
+        ><svg
+          class="fill-neutral-content"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 32 32"
+          ><path
+            d="M8 4v4H4V4h4M2 2v8h8V2zm16 5v4h-4V7h4m-6-2v8h8V5zM8 16v4H4v-4h4m-6-2v8h8v-8z"
+          ></path><path
+            d="M22 10v6h-6v6h-6v8h20V10Zm-4 8h4v4h-4Zm-2 10h-4v-4h4Zm6 0h-4v-4h4Zm6 0h-4v-4h4Zm0-6h-4v-4h4Zm-4-6v-4h4v4Z"
+          ></path></svg
+        ></span
+      >
+    </div>
+
+    <div class="flex-none hidden lg:block">
+      <ul
+        class="menu menu-horizontal text-neutral-content"
+        class:list={sizeText}
+      >
+        <!-- Navbar menu content here -->
+        {
+          navData.map((item) => (
+            <li>
+              <a href={item.url} class="link-1">
+                {item.list}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div><ToggleDarkLight />
+  </div>
+</div>

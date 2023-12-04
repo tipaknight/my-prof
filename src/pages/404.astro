@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Sidebar from "../components/Sidebar.astro";
+import navData from "../data/navData";
+---
+
+<Layout title="Страница 404" description="Ошибка 404">
+  <Navbar {navData} sizeText="text-[18px]" />
+  <main class="flex-grow">
+    <div class="container mx-auto w-full drawer">
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <div class="container mx-auto h-[50vh] grid place-content-center">
+          <div class="prose prose-sm">
+            <h1 class="text-primary my-4">
+              Упс...Такой страницы не существует
+            </h1>
+            <p class="text-[20px] my-2">Произошла ошибка 404</p>
+            <a href="/" class="link link-primary text-[16px]"
+              >Вернуться на главную страницу</a
+            >
+          </div>
+        </div>
+      </div>
+      <Sidebar {navData} />
+    </div>
+  </main>
+  <Footer {navData} />
+</Layout>

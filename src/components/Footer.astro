@@ -1,0 +1,66 @@
+---
+const { navData } = Astro.props;
+---
+
+<footer
+  class="footer gap-y-3.5 footer-center p-5 bg-base-200 text-base-content rounded"
+>
+  <nav class="grid grid-cols-2 xs:grid-flow-col xs:gap-4">
+    {
+      navData.map((item) => (
+        <a href={item.url} class="link-1">
+          {item.list}
+        </a>
+      ))
+    }
+  </nav>
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a href="https://github.com/tipaknight" target="_blank"
+        ><svg
+          class="fill-neutral-content hover:fill-secondary"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          ><path
+            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+          ></path></svg
+        ></a
+      >
+
+      <a href="https://telegram.me/do_for_you" target="_blank"
+        ><svg
+          class="fill-neutral-content hover:fill-secondary"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          ><path
+            fill-rule="evenodd"
+            d="M18.483 19.79v-.002l.018-.043L21.5 4.625v-.048c0-.377-.14-.706-.442-.903c-.265-.173-.57-.185-.784-.169a2.681 2.681 0 0 0-.586.12a3.23 3.23 0 0 0-.24.088l-.013.005l-16.72 6.559l-.005.002a1.353 1.353 0 0 0-.149.061a2.27 2.27 0 0 0-.341.19c-.215.148-.624.496-.555 1.048c.057.458.372.748.585.899a2.062 2.062 0 0 0 .403.22l.032.014l.01.003l.007.003l2.926.985c-.01.183.008.37.057.555l1.465 5.559a1.5 1.5 0 0 0 2.834.196l2.288-2.446l3.929 3.012l.056.024c.357.156.69.205.995.164c.305-.042.547-.17.729-.315a1.742 1.742 0 0 0 .49-.635l.008-.017l.003-.006l.001-.003ZM7.135 13.875a.3.3 0 0 1 .13-.33l9.921-6.3s.584-.355.563 0c0 0 .104.062-.209.353c-.296.277-7.071 6.818-7.757 7.48a.278.278 0 0 0-.077.136L8.6 19.434l-1.465-5.56Z"
+            clip-rule="evenodd"></path></svg
+        >
+      </a>
+    </div>
+  </nav>
+  <aside>
+    <p>
+      Copyright &copy; <span id="copyright"></span>&nbsp;ИП Ефимов О.В.
+      ОГРНИП:&nbsp;323745600097759
+    </p>
+    <p>
+      Сайт разработан на фреймворке <a
+        href="https://astro.build/"
+        class="link text-secondary link-hover hover:duration-500"
+        target="_blank"
+        rel="nofollow">ASTRO JS</a
+      >
+    </p>
+  </aside>
+</footer>
+<script>
+  document.querySelector("#copyright").textContent = new Date()
+    .getFullYear()
+    .toString();
+</script>

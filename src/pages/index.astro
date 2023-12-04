@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Navbar from "../components/Navbar.astro";
+import navData from "../data/navData";
+import metaData from "../data/metaData.json";
+import Hero from "../components/Hero.astro";
+import BlockImg from "../components/BlockImg.astro";
+import About from "../components/About.astro";
+import Work from "../components/Work.astro";
+import Faq from "../components/Faq.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<Layout
+	title={metaData.title}
+	description={metaData.description}
+	keywords={metaData.keywords}
+	pageType={metaData.pageType}
+	siteName={metaData.siteName}
+>
+	<Navbar {navData} sizeText="text-[18px]" />
+	<main class="flex-grow">
+		<div class="container py-2 mx-auto w-full drawer">
+			<input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+
+			<div class="drawer-content flex flex-col justify-center">
+				<Hero />
+				<BlockImg />
+				<About />
+				<Work />
+				<Faq />
+				<Contact />
+			</div><Sidebar {navData} />
+		</div>
+	</main>
+	<Footer {navData} />
+</Layout>

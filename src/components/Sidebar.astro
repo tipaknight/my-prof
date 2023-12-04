@@ -1,0 +1,37 @@
+---
+const { navData } = Astro.props;
+---
+
+<div class="drawer-side z-30">
+  <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"
+  ></label>
+
+  <ul class="menu p-4 w-60 xs:w-96 min-h-full bg-base-200 pt-10 text-[18px]">
+    <div class="my-5 mx-4">
+      <span
+        ><svg
+          class="fill-neutral-content"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 32 32"
+          ><path
+            d="M8 4v4H4V4h4M2 2v8h8V2zm16 5v4h-4V7h4m-6-2v8h8V5zM8 16v4H4v-4h4m-6-2v8h8v-8z"
+          ></path><path
+            d="M22 10v6h-6v6h-6v8h20V10Zm-4 8h4v4h-4Zm-2 10h-4v-4h4Zm6 0h-4v-4h4Zm6 0h-4v-4h4Zm0-6h-4v-4h4Zm-4-6v-4h4v4Z"
+          ></path></svg
+        ></span
+      >
+    </div>
+    <!-- Sidebar content here -->
+    {
+      navData.map((item) => (
+        <li>
+          <a href={item.url} class="link-1">
+            {item.list}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

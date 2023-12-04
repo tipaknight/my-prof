@@ -1,0 +1,16 @@
+---
+import { Image } from "astro:assets";
+import gmailImg from "./../assets/img/gmail.webp";
+import ydImg from "./../assets/img/yandex.webp";
+import mailImg from "./../assets/img/mail-ru.webp";
+import outImg from "./../assets/img/outlook.webp";
+---
+
+<div class="min-h-fit flex justify-around items-center gap-8 flex-wrap my-9">
+  <div><Image src={gmailImg} alt="gmail" height={50} /></div>
+  <div>
+    <Image src={mailImg} alt="gmail" height={50} class="rounded-lg" />
+  </div>
+  <div><Image src={ydImg} alt="gmail" height={50} class="rounded-lg" /></div>
+  <div><Image src={outImg} alt="gmail" height={50} /></div>
+</div>

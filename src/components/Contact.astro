@@ -1,0 +1,82 @@
+<section class="max-w-full flex flex-col items-center my-9">
+  <h2 class="color-title text-center" id="contact">Контакты</h2>
+  <p class="max-w-[850px] mx-auto mb-3">
+    Свяжитесь со мной если вы будущий потенциальный клиент и хотите получить
+    более развернутую информацию, или коллега, желающий обменяться опытом.
+  </p>
+  <div>
+    <form
+      method="post"
+      name="contact"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+    >
+      <input type="hidden" name="subject" value="Письмо из  my-portfolio" />
+      <div
+        class="flex flex-row gap-x-3 flex-wrap justify-center max-w-[1024px]"
+      >
+        <div class="flex flex-col min-w-[300px] lg:min-w-[420px] max-w-full">
+          <label class="form-control w-full">
+            <div class="label">
+              <span class="label-text text-sm text-gray-500"
+                >Как вас зовут?</span
+              >
+            </div>
+            <input
+              type="text"
+              placeholder="Ваше имя"
+              name="name"
+              class="input input-bordered w-full"
+            />
+          </label>
+          <label class="form-control">
+            <div class="label">
+              <span class="label-text text-sm text-gray-400"
+                >Краткое содержание</span
+              >
+            </div>
+            <textarea
+              name="message"
+              class="textarea textarea-bordered h-24"
+              placeholder="Введите ваше сообщение"></textarea>
+          </label>
+        </div>
+        <div
+          class="flex flex-col justify-between gap-y-2 min-w-[300px] lg:min-w-[420px] max-w-full"
+        >
+          <label class="form-control">
+            <div class="label">
+              <span class="label-text text-sm text-gray-500"
+                >Как с вами связаться?</span
+              >
+            </div>
+            <textarea
+              name="connect"
+              class="textarea textarea-bordered h-12"
+              placeholder="Введите способ связи"></textarea>
+          </label>
+
+          <p class="max-w-[300px] text-center mx-auto">
+            Пишите в контактную форму или напрямую в <a
+              class="link text-secondary link-hover"
+              href="https://telegram.me/do_for_you"
+              target="_blank">Telegram.</a
+            >
+          </p>
+
+          <button type="submit" class="btn btn-outline btn-secondary uppercase"
+            >Отправить</button
+          >
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<style>
+  input::placeholder {
+    font-size: 12px;
+  }
+  textarea::placeholder {
+    font-size: 12px;
+  }
+</style>

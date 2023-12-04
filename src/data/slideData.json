@@ -1,0 +1,57 @@
+[
+  {
+    "urlImg": "/images/emsa.webp",
+    "slideAlt": "emsa",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/emsa_blu/blu-min.html"
+  },
+  {
+    "urlImg": "/images/moul2.webp",
+    "slideAlt": "moulinex",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/moul_dr/moul-day.html"
+  },
+  {
+    "urlImg": "/images/wmf-1.webp",
+    "slideAlt": "wmf",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/WMF-spec-price/wmf-price.html"
+  },
+  {
+    "urlImg": "/images/tefal-2.webp",
+    "slideAlt": "tefal",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/Tefal-parogen/tefal-par.html"
+  },
+  {
+    "urlImg": "/images/emsa2.webp",
+    "slideAlt": "emsa",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/emsa_go-tefal/emsa-tefal.html"
+  },
+  {
+    "urlImg": "/images/moul1.webp",
+    "slideAlt": "moulinex",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/moul_leto/moul-sorbet.html"
+  },
+  {
+    "urlImg": "/images/tefal-1.webp",
+    "slideAlt": "tefal",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/tefal_chisto/chisto.html"
+  },
+  {
+    "urlImg": "/images/row-2.webp",
+    "slideAlt": "rowenta",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/Row-fen/row-fen.html"
+  },
+  {
+    "urlImg": "/images/tefal-3.webp",
+    "slideAlt": "tefal",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/Tefal_school/school.html"
+  },
+  {
+    "urlImg": "/images/row-1.webp",
+    "slideAlt": "rowenta",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/Row-glad/row-glad.html"
+  },
+  {
+    "urlImg": "/images/wmf-2.webp",
+    "slideAlt": "vmf",
+    "pathCont": "https://tipaknight.github.io/portfolio/content/WMF-dayChef/wmf-day.html"
+  }
+]
