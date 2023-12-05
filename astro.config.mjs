@@ -6,5 +6,10 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://email-verstka.netlify.app',
-  integrations: [tailwind(), react()]
+  integrations: [tailwind(), react()],
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/noop'
+    }
+  }
 });

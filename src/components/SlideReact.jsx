@@ -49,7 +49,7 @@ export default () => {
 
     className="prose max-w-[300px] sm:max-w-[480px] md:max-w-[560px] tb:max-w-[800px] "
 
-  >{slideData.map((item) => (<SwiperSlide><div className='flex flex-col items-center gap-3'><img src={item.urlImg} alt={item.slideAlt} /><a className='link-1 uppercase' target='_blank' href={item.pathCont}>смотреть</a></div></SwiperSlide>))}
+  >{slideData.map((item) => (<SwiperSlide><div className='flex flex-col items-center gap-3'><img src={item.urlImg} alt={item.slideAlt} width={300} height={400} /><a className='link-1 uppercase' target='_blank' href={item.pathCont}>смотреть</a></div></SwiperSlide>))}
 
   </Swiper ></>
 
