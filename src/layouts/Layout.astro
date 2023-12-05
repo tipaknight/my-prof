@@ -30,6 +30,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<meta property="og:type" content={pageType} />
 		<meta property="og:description" content={description} />
 		<meta property="og:url" content={canonicalURL} />
+		<meta
+			name="google-site-verification"
+			content="gfEBIh4yZJlsnobvlgypUBumoZZapcqQJAqfQmZRMsE"
+		/>
 		<title>{title}</title>
 	</head>
 	<body class="flex flex-col min-h-screen font-['Roboto']">
