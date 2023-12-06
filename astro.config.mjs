@@ -8,7 +8,12 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://email-verstka.netlify.app',
-  integrations: [tailwind(), react(), robotsTxt(), sitemap()],
+  integrations: [tailwind(), react(), robotsTxt({
+    sitemap:
+      [
+        'https://email-verstka.netlify.app/sitemap-index.xml',
+        'https://email-verstka.netlify.app/sitemap-0.xml',],
+  }), sitemap()],
   image: {
     service: {
       entrypoint: 'astro/assets/services/noop'
