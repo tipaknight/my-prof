@@ -13,7 +13,14 @@ export default defineConfig({
       [
         'https://email-verstka.netlify.app/sitemap-index.xml',
         'https://email-verstka.netlify.app/sitemap-0.xml',],
-  }), sitemap()],
+  }), sitemap({
+    // configuration options
+    entryLimit: 1000,
+    changefreq: 'daily',
+    priority: 1.0,
+    lastmod: new Date().new,
+
+  }),],
   image: {
     service: {
       entrypoint: 'astro/assets/services/noop'
